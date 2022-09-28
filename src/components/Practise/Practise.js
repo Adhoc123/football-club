@@ -11,10 +11,12 @@ const Practise = () => {
     },[])
     return (
         <div className='total-body'>
+            
             <div className="package-container">
-                <h1>tHIS IS FROM PACK {items.length}</h1>
+                {/* <h1>tHIS IS FROM PACK {items.length}</h1> */}
                 {
                     items.map(item=><SinglePackage
+                    key={item._id}
                     item={item}
                     ></SinglePackage>)
                 }

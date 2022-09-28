@@ -1,3 +1,27 @@
+.cart img{
+    width: 220px;
+    height: 150px;
+    border-radius: 5px
+}
 .cart{
-    width: 40px;
+   
+    border: 2px solid gray;
+    height: auto;
+    width: 220px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+    padding: 20px;
+}
+.cart button{
+    width: 100%;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+}
+.cart button:hover{
+    background-color: yellowgreen;
 }

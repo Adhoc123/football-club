@@ -9,7 +9,8 @@ const SinglePackage = (props) => {
             <h1>{name}</h1>
             <p>{about}</p>
             <p>Age: {age}</p>
-            <p>Time: {time}</p>
+            <p>Time: {time}m</p>
+            <button>Add To Cart</button>
         </div>
     );
 };
