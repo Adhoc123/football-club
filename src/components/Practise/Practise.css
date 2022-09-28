@@ -1,0 +1,7 @@
+.total-body{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.details-container{
+    background-color: yellowgreen;
+}

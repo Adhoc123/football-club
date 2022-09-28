@@ -1,19 +1,13 @@
 import React from 'react';
 import './Header.css'
-import logo from '../../images/football.jpg'
+import logo from '../../images/new.jpg'
 
 const Header = () => {
     return (
-        <div>
-            <nav>
-                <div className='hello'>
-              {/* //</div>  <img src={logo}</> */}
-                <img src={logo}></img>
-                <h1>Football Club</h1>
-                </div>
-              
-            </nav>
-        </div>
+        <nav className='header'>
+            <img src={logo} alt='' />
+            <h1>Football Club</h1>
+        </nav>
     );
 };
 
