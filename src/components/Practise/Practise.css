@@ -38,3 +38,18 @@
     color: white;
     
 }
+.break-time{
+    display: flex;
+    gap: 4px;
+    margin-top: -20px;
+    margin-left: 7px;
+   
+}
+.bk h4{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.time-container h4{
+    margin-left: 20px;
+}

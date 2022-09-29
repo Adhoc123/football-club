@@ -1,0 +1,12 @@
+.time{
+    background-color: white;
+    border-radius: 130px;
+   
+    font-size: 10px;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.time:hover{
+    background-color: slateblue;
+}
