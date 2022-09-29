@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Details.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 let sum = [];
 const Details = (props) => {
-    
-    // localStorage.setItem('Break-time',JSON.stringify(props.value));
+    const storedCart = localStorage.getItem('Break-time');
+    console.log(storedCart)
+    let cart = {};
+    if(storedCart){
+        cart = JSON.parse(storedCart)
+    }
+    cart = props.value;
+    localStorage.setItem('Break-time',JSON.stringify(cart));
+
+    useEffect(()=>{},
+    [props.value])
+    // const getStoredCart = ()=>{
+    //     const storedCart = localStorage.getItem('Break-time');
+    //     let saved = {}
+    //     if(storedCart){
+    //         saved = JSON.parse(storedCart);
+    //     }
+    //     return saved;
+    // }
     // const storedValue = ()=>{
     //     const currentVal = localStorage.getItem('Break-time');
     //     let cart = {};

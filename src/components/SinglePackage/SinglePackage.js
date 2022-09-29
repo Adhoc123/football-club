@@ -1,7 +1,7 @@
 import React from 'react';
 import './SinglePackage.css'
 const SinglePackage = (props) => {
-    console.log(props);
+
     const {picture, name, age, time, about} = props.item;
     const {times} = props;
     return (
