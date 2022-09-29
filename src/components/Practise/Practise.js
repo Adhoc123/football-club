@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SinglePackage from '../SinglePackage/SinglePackage';
 import './Practise.css'
+import picture from '../../images/emon.jpg'
 
 const Practise = () => {
     const [items,setItems] = useState([]);
@@ -13,7 +14,6 @@ const Practise = () => {
         <div className='total-body'>
             
             <div className="package-container">
-                {/* <h1>tHIS IS FROM PACK {items.length}</h1> */}
                 {
                     items.map(item=><SinglePackage
                     key={item._id}
@@ -22,7 +22,21 @@ const Practise = () => {
                 }
             </div>
             <div className="details-container">
-                <h1>This is from details</h1>
+                <div>
+                <div className='myself'>
+                    <img src={picture} alt=""></img>
+                    <div>
+                        <p>Emon, Mehedi Hasan</p>
+                        <p className='location'>Dhaka, Bangladesh</p>
+                    </div>
+                    
+                </div>
+               
+                <p className='about'>Hi, This is Emon. Passionate about software
+                    engineering. His age is 24. He loves to do software development.
+                    Sometimes he solves problem for sharpening his solving technique.
+                </p>
+                </div>
             </div>
         </div>
     );
