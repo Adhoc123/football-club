@@ -1,8 +1,9 @@
 import React from 'react';
 import './SinglePackage.css'
 const SinglePackage = (props) => {
-    console.log(props.item);
+    console.log(props);
     const {picture, name, age, time, about} = props.item;
+    const {times} = props;
     return (
         <div className='cart'>
             <img src={picture} />
@@ -10,7 +11,7 @@ const SinglePackage = (props) => {
             <p>{about}</p>
             <p>Age: {age}</p>
             <p>Time: {time}m</p>
-            <button>Add To Cart</button>
+            <button onClick={()=>times(props.item.time)}>Add To Cart</button>
         </div>
     );
 };

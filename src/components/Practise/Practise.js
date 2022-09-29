@@ -12,7 +12,11 @@ const Practise = () => {
         .then(res=>res.json())
         .then(data=>setItems(data))
     },[])
-   
+    const [old, setOld] = useState(0);
+    const times = (props)=>{
+        setOld(props);
+        console.log(old);
+    }
     const [value, setValue] = useState(0);
     const handle = (props)=>{
         setValue(props);
@@ -25,6 +29,7 @@ const Practise = () => {
                     items.map(item=><SinglePackage
                     key={item._id}
                     item={item}
+                    times={times}
                     ></SinglePackage>)
                 }
             </div>
@@ -60,6 +65,7 @@ const Practise = () => {
                     <div>
                        <Details
                        value={value}
+                       old={old}
                        ></Details>
                     </div>
                 </div>  
