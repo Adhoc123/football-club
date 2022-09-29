@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Details from '../Details/Details';
+
 import './Break_Time.css'
 const Break_Time = (props) => {
+    console.log(props)
     const {time} = props.item;
-    const timeButton = ()=>{
-        console.log('clicked');
-    }
+    const {handle} = props;
     return (
-        <div className='time'>
-            <p onClick={timeButton}>{time}m</p>
-        </div>
+          <div className='time'>
+              <p onClick={()=>handle(props.item.time)}>{time}m</p>  
+          </div>    
+          
     );
 };
 

@@ -12,6 +12,11 @@ const Practise = () => {
         .then(res=>res.json())
         .then(data=>setItems(data))
     },[])
+   
+    const [value, setValue] = useState(0);
+    const handle = (props)=>{
+        setValue(props);
+    }
     return (
         <div className='total-body'>
             
@@ -46,21 +51,19 @@ const Practise = () => {
                              items.map(item=><Break_Time
                                 key={item._id}
                                 item={item}
+                                handle={handle}
                                 ></Break_Time>)
                         }
                     </div>
-                </div>
-                <div className='time-container'>
-                    <h4>Total Time</h4>
-                    <div className='total-time'>
-                        {
-                             items.map(item=><Details
-                                key={item._id}
-                                item={item}
-                                ></Details>)
-                        }
+                </div>  
+                <div>
+                    <div>
+                       <Details
+                       value={value}
+                       ></Details>
                     </div>
-                </div>
+                </div>  
+                
             </div>
         </div>
     );
