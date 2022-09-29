@@ -12,4 +12,9 @@
     border-radius: 5px;
     border: 0;
     padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.details button:hover{
+    background-color: goldenrod;
 }
