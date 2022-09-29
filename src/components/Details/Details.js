@@ -21,8 +21,8 @@ const Details = (props) => {
         <div className='details'>
             <h4>Total Time</h4>
             <hr></hr>
-            <p>Exercise Time: {result}</p>
-            <p>Break Time: {props.value}</p>
+            <p><strong>Exercise Time:</strong> {result}</p>
+            <p><strong>Break Time:</strong> {props.value}</p>
             <button>Activity Done</button>
         </div>
     );

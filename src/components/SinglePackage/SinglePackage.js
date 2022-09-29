@@ -9,8 +9,8 @@ const SinglePackage = (props) => {
             <img src={picture} />
             <h1>{name}</h1>
             <p>{about}</p>
-            <p>Age: {age}</p>
-            <p>Time: {time}m</p>
+            <p><strong>Age:</strong> {age}</p>
+            <p><strong>Time: </strong> {time}m</p>
             <button onClick={()=>times(props.item.time)}>Add To Cart</button>
         </div>
     );
